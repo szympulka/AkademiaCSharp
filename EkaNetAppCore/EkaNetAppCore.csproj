@@ -32,11 +32,9 @@
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
-      <Private>True</Private>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
-      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -50,30 +48,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataContext.cs" />
+    <Compile Include="Entities\PaymentInfo.cs" />
+    <Compile Include="Entities\Return.cs" />
     <Compile Include="Entities\User.cs" />
-    <Compile Include="Entities\UserInfo.cs" />
-    <Compile Include="Migrations\201702231836080_First.cs" />
-    <Compile Include="Migrations\201702231836080_First.Designer.cs">
-      <DependentUpon>201702231836080_First.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201702231946133_UserInfoCreate.cs" />
-    <Compile Include="Migrations\201702231946133_UserInfoCreate.Designer.cs">
-      <DependentUpon>201702231946133_UserInfoCreate.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201702231836080_First.resx">
-      <DependentUpon>201702231836080_First.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201702231946133_UserInfoCreate.resx">
-      <DependentUpon>201702231946133_UserInfoCreate.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

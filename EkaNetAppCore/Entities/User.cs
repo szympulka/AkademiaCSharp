@@ -9,11 +9,17 @@ namespace EkaNetAppCore.Entities
 {
     public class User
     {
-        [Key]
         public int Id { get; set; }
-        public string UserName { get; set; }
+        public string Name { get; set; }
+        public string Surname { get; set; }
+        public string Adress { get; set; }
+        public string BankAccountNumber { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
         public DateTime LastLogin { get; set; }
+        public double Balance { get; set; }
+
+        public ICollection<Return> Returns { get; set; }
+
     }
 }

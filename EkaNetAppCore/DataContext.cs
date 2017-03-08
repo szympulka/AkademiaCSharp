@@ -6,6 +6,5 @@ namespace EkaNetAppCore
     public class DataContext : DbContext
     {
         public DbSet<User> Users { get; set; }
-        public DbSet<UserInfo> UserInfos { get; set; }
     }
 }

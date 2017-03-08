@@ -13,10 +13,10 @@ namespace EkaNetAppCore.Entities
         public double Amount { get; set; }
         public DateTime Date { get; set; }
         public bool PaymentByBankTransfer { get; set; }
+        public int UserId { get; set; }
 
-        //public int UserId { get; set; }
 
-        //[ForeignKey("UserId")]
-        //public virtual User User { get; set; }
+        [ForeignKey("UserId")]
+        public virtual User User { get; set; }
     }
 }

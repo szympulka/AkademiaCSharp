@@ -10,6 +10,7 @@ namespace EkaNetAppCore.Entities
         public DateTime Date { get; set; }
         public bool ReturnedByBankTransfer { get; set; }
         public int UserId { get; set; }
+        public string Event { get; set; }
 
         [ForeignKey("UserId")]
         public virtual User User { get; set; }

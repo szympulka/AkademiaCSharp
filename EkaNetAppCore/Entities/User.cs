@@ -16,6 +16,7 @@ namespace EkaNetAppCore.Entities
         public string BankAccountNumber { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
+        public int PhoneNumber { get; set; }
         public DateTime? LastLogin { get; set; }
         public double Balance { get; set; }
 

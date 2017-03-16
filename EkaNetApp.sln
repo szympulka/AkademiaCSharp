@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EkaNetAppCore", "EkaNetAppCore\EkaNetAppCore.csproj", "{4D22D75C-4EBF-4609-A5F8-DCAD4E24F185}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.csproj", "{D543BAF9-C96E-4448-ACD5-4FB520E937F1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EkaNetAppWeb", "EkaNetAppWeb\EkaNetAppWeb.csproj", "{D2A6F21B-D4EF-429F-AC67-67961B0F723F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{4D22D75C-4EBF-4609-A5F8-DCAD4E24F185}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D22D75C-4EBF-4609-A5F8-DCAD4E24F185}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D22D75C-4EBF-4609-A5F8-DCAD4E24F185}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D543BAF9-C96E-4448-ACD5-4FB520E937F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D543BAF9-C96E-4448-ACD5-4FB520E937F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D543BAF9-C96E-4448-ACD5-4FB520E937F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D543BAF9-C96E-4448-ACD5-4FB520E937F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2A6F21B-D4EF-429F-AC67-67961B0F723F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2A6F21B-D4EF-429F-AC67-67961B0F723F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2A6F21B-D4EF-429F-AC67-67961B0F723F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2A6F21B-D4EF-429F-AC67-67961B0F723F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

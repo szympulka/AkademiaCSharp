@@ -1,0 +1,17 @@
+﻿.navbar{
+    height:50px;
+    width:100%;
+}
+.username{
+    height:50px;
+    width:40%;
+    text-align:left;
+    float: left;
+    display: inline-block;
+}
+.login-info {
+    width: 60%;
+    height: 50px;
+    text-align: right;
+    display: inline-block;
+}

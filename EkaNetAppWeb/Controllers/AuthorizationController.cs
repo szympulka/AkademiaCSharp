@@ -36,11 +36,17 @@ namespace EkaNetAppWeb.Controllers
                     if (User.Password == HashPasswordHelper.HashPassword(user.Password))
                     {
                         FormsAuthentication.SetAuthCookie(user.Email, false);
+                        return RedirectToAction("Index", "Home");
                     }   
                 }
-            
             }
             return View();
         }
+        public ActionResult UserLogout()
+        {
+            FormsAuthentication.SignOut();
+            return RedirectToAction("Index", "Home");
+        }
+
     }
 }

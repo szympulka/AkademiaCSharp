@@ -10,6 +10,8 @@ namespace EkaNetAppCore.Entities
      public class PaymentInfo
     {
         public int Id { get; set; }
+        public string TitlePayment { get; set; }
+        public string PaymentDescription { get; set; }
         public double Amount { get; set; }
         public DateTime Date { get; set; }
         public bool PaymentByBankTransfer { get; set; }

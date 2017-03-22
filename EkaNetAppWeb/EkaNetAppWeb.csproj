@@ -95,6 +95,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Index.css" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -102,11 +103,13 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AuthorizationController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PaymentController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\HashPasswordHelper.cs" />
     <Compile Include="Models\LoginModel.cs" />
+    <Compile Include="Models\PaymentInfoModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -115,6 +118,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Authorization\Registration.cshtml" />
     <Content Include="Views\Authorization\Login.cshtml" />
+    <Content Include="Views\Payment\AddPayment.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

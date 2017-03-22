@@ -1,4 +1,21 @@
-﻿@for(int i =0; i < 10; i++)
-{
-    <p>@i</p>
-}
+﻿<link href="~/Content/Index.css" rel="stylesheet" />
+
+<div class="navbar">
+    <div class="username">
+        @if(Request.IsAuthenticated)
+        {
+            @User.Identity.Name
+        }
+    </div>
+    <div class="login-info">
+        @if (Request.IsAuthenticated)
+        {
+            @Html.ActionLink("AddPayment","AddPayment","Payment")
+            @Html.ActionLink("Logout","UserLogout", "Authorization")
+        }
+        else
+        {
+            @Html.ActionLink("Login","Login", "Authorization")
+        }
+    </div>
+</div>

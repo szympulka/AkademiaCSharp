@@ -19,6 +19,7 @@ namespace EkaNetAppCore.Entities
         public int PhoneNumber { get; set; }
         public DateTime? LastLogin { get; set; }
         public double Balance { get; set; }
+        public string Role { get; set; }
 
         public ICollection<Return> Returns { get; set; }
         public ICollection<PaymentInfo> PaymentInfos { get; set; }

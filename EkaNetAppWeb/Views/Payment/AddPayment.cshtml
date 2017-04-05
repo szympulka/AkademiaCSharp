@@ -1,11 +1,12 @@
 ﻿@model EkaNetAppWeb.Models.PaymentInfoModel
 
 
-<form>
+<form id="addPayment" method="post" action="../Payment/AddPayment">
     <input type="text" name="Amount" placeholder="Amount"/>
     <input type="text" name="TitlePayment" placeholder="TitlePayment" />
     <input type="text" name="PaymentDescription" placeholder="PaymentDescription" />
     <input type="text" name="Event" placeholder="Event" />
-    <input type="checkbox"  name="PaymentByBankTransfer" />
-    <button> Kliknij Mnie</button>
+    @Html.EditorFor(x => x.PaymentByBankTransfer)
+    <button type="submit" form="addPayment" value="Submit"> Kliknij Mnie</button>
 </form>
+

@@ -7,32 +7,35 @@ using System.Web.Mvc;
 
 namespace EkaNetAppWeb.Controllers
 {
-    [Authorize]
+   // [Authorize]
     public class PaymentController : Controller
     {
         DataContext db = new DataContext();
-        // GET: Payment
-        public ActionResult AddPayment(PaymentInfoModel model)
+        public ActionResult AddPayment()
         {
-            if(model.Event != null)
-            {
-                var paymentInfo = new PaymentInfo();
-                var user = db.Users.FirstOrDefault(x => x.Email == HttpContext.User.Identity.Name);
-                paymentInfo.Amount = model.Amount;
-                paymentInfo.PaymentByBankTransfer = model.PaymentByBankTransfer;
-                paymentInfo.Event = model.Event;
-                paymentInfo.Date = DateTime.Now;
-                paymentInfo.TitlePayment = model.TitlePayment;
-                paymentInfo.PaymentDescription = model.PaymentDescription;
-
-                if(user != null) paymentInfo.UserId = user.Id;
-
-                db.PaymentInfos.Add(paymentInfo);
-                db.SaveChanges();
-
-                return RedirectToAction("Index", "Home");
-            }
             return View();
         }
+
+        [HttpPost]
+        public ActionResult AddPayment(PaymentInfoModel model)
+        {
+            var paymentInfo = new PaymentInfo();
+            var user = db.Users.FirstOrDefault(x => x.Email == HttpContext.User.Identity.Name);
+            paymentInfo.Amount = model.Amount;
+            paymentInfo.PaymentByBankTransfer = model.PaymentByBankTransfer;
+            paymentInfo.Event = model.Event;
+            paymentInfo.Date = DateTime.Now;
+            paymentInfo.TitlePayment = model.TitlePayment;
+            paymentInfo.PaymentDescription = model.PaymentDescription;
+
+            if (user != null) paymentInfo.UserId = user.Id;
+
+            db.PaymentInfos.Add(paymentInfo);
+            db.SaveChanges();
+
+            return RedirectToAction("Index", "Home");
+        }
+
+
     }
 }

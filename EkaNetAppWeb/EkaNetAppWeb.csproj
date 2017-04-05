@@ -104,10 +104,12 @@
     <Compile Include="Controllers\AuthorizationController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PaymentController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\HashPasswordHelper.cs" />
+    <Compile Include="Helpers\UserHelper.cs" />
     <Compile Include="Models\LoginModel.cs" />
     <Compile Include="Models\PaymentInfoModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -119,6 +121,9 @@
     <Content Include="Views\Authorization\Registration.cshtml" />
     <Content Include="Views\Authorization\Login.cshtml" />
     <Content Include="Views\Payment\AddPayment.cshtml" />
+    <Content Include="Views\User\GetLastPayments.cshtml" />
+    <Content Include="Views\User\UserPanel.cshtml" />
+    <Content Include="Views\User\GetLastFivePayments.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

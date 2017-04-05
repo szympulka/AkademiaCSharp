@@ -1,0 +1,10 @@
+﻿@model IEnumerable<EkaNetAppCore.Entities.User>
+
+@foreach (var item in Model)
+{
+    <div>@item.Name</div>
+    <div>@item.Surname</div>
+    <div>@item.Balance</div>
+    <div>MAIL</div>
+    <p></p>
+}

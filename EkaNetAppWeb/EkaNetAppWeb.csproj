@@ -101,6 +101,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\AuthorizationController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PaymentController.cs" />
@@ -109,6 +110,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\HashPasswordHelper.cs" />
+    <Compile Include="Helpers\MailHelper.cs" />
     <Compile Include="Helpers\UserHelper.cs" />
     <Compile Include="Models\LoginModel.cs" />
     <Compile Include="Models\PaymentInfoModel.cs" />
@@ -124,6 +126,8 @@
     <Content Include="Views\User\GetLastPayments.cshtml" />
     <Content Include="Views\User\UserPanel.cshtml" />
     <Content Include="Views\User\GetLastFivePayments.cshtml" />
+    <Content Include="Views\Admin\AdminPanel.cshtml" />
+    <Content Include="Views\Admin\UsersDebts.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
